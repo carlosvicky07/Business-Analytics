@@ -1,0 +1,52 @@
+#Command 1
+SELECT * FROM [bigquery-public-data:noaa_gsod.gsod1929] LIMIT 1000 
+Output
+https://docs.google.com/spreadsheets/d/1lkur4EchHvgs1JKruvz-2C9PjGIC4CBm1RHBCiZWN6U/edit#gid=1008560818
+#Command 2
+SELECT YEAR AS TIMEFRAME
+FROM [bigquery-public-data:noaa_gsod.gsod1929]
+Output
+https://docs.google.com/spreadsheets/d/1ncpJBkBZy2mdcmsZV-kBHhPcx8kFc5iBB6bXe43T6n8/edit#gid=1644405781
+#Command 3
+SELECT AVG(temp)
+FROM [bigquery-public-data:noaa_gsod.gsod1929]
+https://docs.google.com/spreadsheets/d/1Si5TckPA8V6kuzntNqVFYrD12d0NrCqNxHUfPwmu3Qs/edit#gid=1382255058
+#command 4
+SELECT slp
+FROM [bigquery-public-data:noaa_gsod.gsod1929]
+WHERE slp BETWEEN 975.7 AND 1004.3
+Output
+https://docs.google.com/spreadsheets/d/1JPYOHOIJtgu_qpHgXIg6Q4I7v-coWj3sHR_HmmtChJw/edit#gid=435114570	
+#command 5 
+SELECT COUNT(count_slp)
+FROM [bigquery-public-data:noaa_gsod.gsod1929]
+WHERE slp BETWEEN 975.7 AND 1004.3   
+Output
+https://docs.google.com/spreadsheets/d/1WsvnnV_kYEFDcYnQvBu2jT0BcdidWlmVd4jA9XAt4j0/edit#gid=1548859736
+#command 6
+SELECT count_slp,COUNT(*)
+FROM [bigquery-public-data:noaa_gsod.gsod1929] 
+GROUP BY count_slp 
+Output
+https://docs.google.com/spreadsheets/d/17YuP_HPzWJoDRokocUdaBMVVBdgsmW4OejdGyVTRsKg/edit#gid=1625046914
+#command 7
+SELECT MAX(count_visib)
+FROM [bigquery-public-data:noaa_gsod.gsod1929]
+Output
+https://docs.google.com/spreadsheets/d/1QGxWTzBvd3FJaX6EBuIlTvkgU2sUsV57b3uqYwoTcQg/edit#gid=39827887 
+#command 8
+SELECT MIN(COUNT_WDSP)
+FROM [bigquery-public-data:noaa_gsod.gsod1929]
+Output 
+https://docs.google.com/spreadsheets/d/1ddUZgsa1WFHbTeI2X0Cver_yUVu-t4HocmhaBoakIrA/edit#gid=1665177024
+#command 9
+SELECT SUM(slp)
+FROM [bigquery-public-data:noaa_gsod.gsod1929] LIMIT 1000 
+Output
+https://docs.google.com/spreadsheets/d/1pkU09OA3SzJp6kiso0hhQnL1GbCZKA8SjECu3JkvpFg/edit#gid=1007803553
+#command 10
+SELECT max	
+FROM [bigquery-public-data:noaa_gsod.gsod1929] 
+WHERE max=50
+Output
+https://docs.google.com/spreadsheets/d/1F0pYSvmNKJCT--TQ5RVgZBYIY0wzsx1R6IU7TU3jfx4/edit#gid=2106846043 
